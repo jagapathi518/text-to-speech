@@ -1,0 +1,15 @@
+import pyttsx3
+
+
+
+tem = pyttsx3.init()
+
+voices = tem.getProperty('voices')
+tem.setProperty('voice',voices[1].id)
+
+tem.setProperty('rate',120)
+
+text = "pyttsx3 is a Python library used to convert text into speech (offline).  "
+
+tem.say(text)
+tem.runAndWait()
